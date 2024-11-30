@@ -65,7 +65,7 @@ router.put('/:id', async(req,res)=>{
         if(!result){
             return res.status(500).json({message:"Notes not found"})
         }
-        return res.status(500).json({message:"Notes Updated Successfully"})
+        return res.status(200).json({message:"Notes Updated Successfully"})
     }
     catch(error){
         console.log(error.message)

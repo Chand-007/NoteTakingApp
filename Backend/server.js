@@ -5,12 +5,10 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const NotesRoute = require('./routes')
 
-
 app.use(cors())
 app.use(express.json())
 
 app.get('/',(req,response)=>{
-    console.log(`hitting the request path ${req.url} with request method ${req.method} and statuscode ${req.statusCode}`)
     return response.status(202).send(`Welcome to note taking application`)
 })
 
