@@ -25,19 +25,17 @@ A simple and efficient Todo Application built with the **MERN** stack (MongoDB, 
 git clone https://github.com/your-username/mern-todo-app.git
 
 ### 2. Start Frontend
-
-cd frontend 
-npm install && npm start
+- cd frontend 
+- npm install && npm start
 
 ### 3. Start Backend
-
-cd Backend
-**Add your MongoDB URI** in server.js file
-npm install && node server.js
+- cd Backend
+- **Add your MongoDB URI** in server.js file
+- npm install && node server.js
 
 ## Screenshot
 
-### Dashdoard
+### Dashboard
 ![Notetaking Dashboard](snapshots/NoteTaking-Card.PNG)
 
 ### CreateTodo
