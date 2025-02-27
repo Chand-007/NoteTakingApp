@@ -16,10 +16,10 @@ app.use('/notes',NotesRoute)
 
 const connectToDatabase = async ()=>{
     try{
-        await mongoose.connect(process.env.mongoDBURL)
+        await mongoose.connect("mongodb://0.0.0.0:27017/", {useNewUrlParser: true, useUnifiedTopology: true })
         console.log("Connected to Database")
-        app.listen(process.env.PORT,()=>{
-            console.log(`Backend Server Listening on port ${process.env.PORT}`)
+        app.listen(5000,()=>{
+            console.log(`Backend Server Listening on port 5000`)
         })
     }
     catch(error){

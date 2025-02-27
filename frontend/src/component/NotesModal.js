@@ -36,14 +36,7 @@ const NotesModal = ({ onClose, note }) => {
                         {note.status}
                     </span>
                 </p>
-                <p className='flex justify-center'>
-                    <FaBook className='mr-[11px] -mt-[38px]
-                                       text-yellow-500
-                                       text-[200px]' />
-                    <span className="text-xl mt-10">
-                        {note.notes}
-                    </span>
-                </p>
+                
             </div>
 
         </div>
