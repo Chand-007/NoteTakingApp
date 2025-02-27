@@ -4,7 +4,6 @@ const router = express.Router()
 
 
 router.post('/', async(req,res)=>{
-    console.log(`hitting the request path ${req.url} with request method ${req.method} and statuscode ${req.statusCode}`)
     try{
         if(!req.body.topic || !req.body.status || !req.body.notes){
             return res.status(400).send({message:"Enter all details"})
@@ -26,7 +25,6 @@ router.post('/', async(req,res)=>{
 
 
 router.get('/',async (req,res)=>{
-    console.log(`hitting the request path ${req.url} with request method ${req.method} and statuscode ${req.statusCode}`)
     try{
         const notes = await Notes.find({})
         return res.status(201).json({
